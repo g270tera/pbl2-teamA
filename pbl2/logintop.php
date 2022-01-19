@@ -45,9 +45,15 @@
  <div class="logtop">
  <p><div class="title">You 柔不断</div>
  <div class="subtitle">～今日は何する？～</div>
+<<<<<<< HEAD
  <p><button class="logbtn", id="logbtn", onclick="location.href='./login.php'">ログイン</button>
  </p>
  <p><button class="newac", id="newac", onclick="location.href='./join'"><ruby> 新 規 作 成 <rt> し ん き さ く せ い
+=======
+ <p><button class="logbtn", id="logbtn">ログイン</button>
+ </p>
+ <p><button class="newac", id="newac",a href="join/"><ruby> 新 規 作 成 <rt> し ん き さ く せ い
+>>>>>>> d3cf47c3dc8fedce4835eb56472a0beeff53ca61
 </rt></ruby></button>
  </p>
  </p>
