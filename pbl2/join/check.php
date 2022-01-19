@@ -36,8 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	<link rel="stylesheet" href="../style.css" />
 </head>
-
-<body>
+<body bgcolor="669933">
 	<div>
 		<div>
 			<h1>会員登録</h1>
