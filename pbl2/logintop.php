@@ -39,6 +39,10 @@
  background-color: white;
  color: black;
  }
+.p{
+    
+ color: white;
+}
  </style>
 </head>
 <body bgcolor="669933">
