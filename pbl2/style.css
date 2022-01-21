@@ -1,5 +1,5 @@
 .error {
-	font-size: 90%;
+	font-size: 70%;
 	color: #BB1850;
 }
 .title{
@@ -8,13 +8,13 @@
 	text-align: center;
 	margin-top: 100px;
 	}
-	.subtitle{
+.subtitle{
 	color: white;
 	font-size: 25px;
 	text-align: center;
 	margin-bottom: 70px;
 	}
-	.logbtn, .newac{
+.logbtn, .newac{
 	display: flex;
 	font-size: 30px;
 	margin:15px auto;
@@ -32,7 +32,26 @@
 	-webkit-transition: all .3s;
 	transition: all .3s;
 	}
-	.logbtn:hover, .newac:hover{
+.logbtn:hover, .newac:hover{
 	background-color: white;
 	color: black;
 	}
+.hh{
+        color: white;
+	font-size: 20px;
+	text-align: center;
+	}
+.pi{
+ color: white;
+ text-align: center;
+}
+.submit{
+ color: white;
+ font-size: 20px;
+ text-align: center;
+ font-weight: bold;
+ }
+.button{
+text-align: center;
+ }
+    

@@ -69,26 +69,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){ /*初回じゃいないかチェッ�
     <link rel="stylesheet" href="../style.css"/>
 </head>
 
-<body>
+<body bgcolor="669933">
+ <p><div class="title">You 柔不断</div>
+ <div class="subtitle">～今日は何する？～</div>
 <div>
-    <div>
-        <h1>会員登録</h1>
-    </div>
-
-    <div>
-        <p>次のフォームに必要事項をご記入ください。</p>
+<div class="pi">
+        <p>次のフォームに必要事項をご記入ください。</p></div>
         <form action="" method="post" enctype="multipart/form-data">
-            <dl>
+            <div class="submit"><dl>
                 <dt>ニックネーム</dt>
                 <dd>
-                    <input type="text" name="name" size="35" maxlength="255" value="<?php echo h($form['name']); ?>"/>
+                    <input type="text" name="name" size="36" maxlength="255" value="<?php echo h($form['name']); ?>"/>
                     <?php if (isset($error['name']) && $error['name'] === 'blank'): ?>
                         <p class="error">* ニックネームを入力してください</p>
                     <?php endif; ?>
                 </dd>
                 <dt>ID</dt>
                 <dd>
-                    <input type="text" name="user_id" size="35" maxlength="255" value="<?php echo h($form['user_id']); ?>"/>
+                    <input type="text" name="user_id" size="36" maxlength="255" value="<?php echo h($form['user_id']); ?>"/>
                     <?php if (isset($error['user_id']) && $error['user_id'] ==='blank'): ?>
                         <p class="error">* IDを入力してください</p>
                     <?php endif; ?>
@@ -97,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){ /*初回じゃいないかチェッ�
                     <?php endif; ?>
                 <dt>パスワード<span class="required">必須</span></dt>
                 <dd>
-                    <input type="password" name="password" size="10" maxlength="20" value="<?php echo h($form['password']); ?>"/>
+                    <input type="password" name="password" size="36" maxlength="20" value="<?php echo h($form['password']); ?>"/>
                     <?php if (isset($error['password']) && $error['password'] === 'blank'): ?>
                         <p class="error">* パスワードを入力してください</p>
                     <?php endif; ?>
@@ -105,8 +103,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){ /*初回じゃいないかチェッ�
                         <p class="error">* パスワードは4文字以上で入力してください</p>
                     <?php endif; ?>
                 </dd>
-            </dl>
-            <div><input type="submit" value="入力内容を確認する"/></div>
+            </dl></div>
+            <div class="button"><input type="submit" value="会員登録をする"/></div>
         </form>
     </div>
 </body>
