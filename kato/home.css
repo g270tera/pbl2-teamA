@@ -1,0 +1,72 @@
+.title{
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.subtitle{
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.action{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size:  30px;
+}
+
+.btn0{
+  display: flex;
+  font-size: 30px;
+  margin:15px auto;
+  cursor: pointer;
+  border-color: black;
+  border: 2px;
+  border-radius: 5px;
+  background-color: white;
+  color: #669933;
+  width: 250px;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn{
+  display: inline-block;
+  font-size: 30px;
+  margin:15px auto;
+  cursor: pointer;
+  border-color: black;
+  border: 2px;
+  border-radius: 5px;
+  background-color: white;
+  color: #669933;
+  width: 200px;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn0:hover, .btn:hover{
+  background-color: white;
+  color: black;
+}
+
+body {
+  background-color: #669933;
+}
+
+hr{
+  height: 3px;
+  background-color: white;
+}
