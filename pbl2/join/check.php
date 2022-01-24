@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	}
 
 	unset($_SESSION['form']);
-	header('Location: done.php');
+	header('Location: ../login.php');
 }
 ?>
 
@@ -33,19 +33,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
 	<meta charset="UTF-8">
 	<title>会員登録</title>
-
 	<link rel="stylesheet" href="../style.css" />
 </head>
 
-<body>
-	<div>
-		<div>
-			<h1>会員登録</h1>
-		</div>
-
-		<div>
-			<p>記入した内容を確認して、「登録する」ボタンをクリックしてください</p>
-			<form action="" method="post">
+<body bgcolor="669933">
+<div class="logtop">
+    <p>
+        <div class="title">You柔不断</div>
+        <div class="subtitle">～今日は何する？～</div>
+        <form action="" method="post">
+        <p>記入した内容を確認して、「登録する」ボタンをクリックしてください</p>
 				<dl>
 					<dt>ニックネーム</dt>
 					<dd><?php echo $form['name']; ?></dd>
@@ -56,11 +53,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 						【表示されません】
 					</dd>
 				</dl>
-				<div><a href="index.php?action=rewrite">&laquo;&nbsp;書き直す</a> | <input type="submit" value="登録する" /></div>
+				<div>
+                    <a href="index.php?action=rewrite">&laquo;&nbsp;書き直す</a>
+                    <button class="newac", id="newac"><ruby>登録<rt>とうろく</rt></ruby></button>
+                </div>
 			</form>
-		</div>
-
-	</div>
+    </p>
+</div>
 </body>
 
 </html>

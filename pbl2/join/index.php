@@ -65,48 +65,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){ /*初回じゃいないかチェッ�
 <head>
     <meta charset="UTF-8">
     <title>会員登録</title>
-
     <link rel="stylesheet" href="../style.css"/>
 </head>
 
 <body bgcolor="669933">
- <p><div class="title">You 柔不断</div>
- <div class="subtitle">～今日は何する？～</div>
-<div>
-<div class="pi">
-        <p>次のフォームに必要事項をご記入ください。</p></div>
-        <form action="" method="post" enctype="multipart/form-data">
-            <div class="submit"><dl>
-                <dt>ニックネーム</dt>
-                <dd>
-                    <input type="text" name="name" size="36" maxlength="255" value="<?php echo h($form['name']); ?>"/>
-                    <?php if (isset($error['name']) && $error['name'] === 'blank'): ?>
-                        <p class="error">* ニックネームを入力してください</p>
-                    <?php endif; ?>
-                </dd>
-                <dt>ID</dt>
-                <dd>
-                    <input type="text" name="user_id" size="36" maxlength="255" value="<?php echo h($form['user_id']); ?>"/>
-                    <?php if (isset($error['user_id']) && $error['user_id'] ==='blank'): ?>
-                        <p class="error">* IDを入力してください</p>
-                    <?php endif; ?>
-                    <?php if (isset($error['user_id']) && $error['user_id'] === 'duplicate'): ?>
-                        <p class="error">* 指定されたIDはすでに登録されています</p>
-                    <?php endif; ?>
-                <dt>パスワード<span class="required">必須</span></dt>
-                <dd>
-                    <input type="password" name="password" size="36" maxlength="20" value="<?php echo h($form['password']); ?>"/>
-                    <?php if (isset($error['password']) && $error['password'] === 'blank'): ?>
-                        <p class="error">* パスワードを入力してください</p>
-                    <?php endif; ?>
-                    <?php if (isset($error['password']) && $error['password'] === 'length'): ?>
-                        <p class="error">* パスワードは4文字以上で入力してください</p>
-                    <?php endif; ?>
-                </dd>
-            </dl></div>
-            <div class="button"><input type="submit" value="会員登録をする"/></div>
-        </form>
-    </div>
+<div class="logtop">
+<p>
+    <div class="title">You柔不断</div>
+    <div class="subtitle">～今日は何する？～</div>
+    <form action="" method="post" enctype="multipart/form-data">
+<p>
+    <input type="text" name="name" maxlength="255" placeholder="ニックネーム" value="<?php echo h($form['name']); ?>"/>
+    <?php if (isset($error['name']) && $error['name'] === 'blank'): ?>
+        <p class="error">* ニックネームを入力してください</p>
+    <?php endif; ?>
+</p>    
+<p>
+    <input type="text" name="user_id"  maxlength="255" placeholder="メールアドレス・ID" value="<?php echo h($form['user_id']); ?>"/>
+    <?php if (isset($error['user_id']) && $error['user_id'] ==='blank'): ?>
+        <p class="error">* IDを入力してください</p>
+    <?php endif; ?>
+    <?php if (isset($error['user_id']) && $error['user_id'] === 'duplicate'): ?>
+        <p class="error">* 指定されたIDはすでに登録されています</p>
+    <?php endif; ?>
+</p>
+<p>
+    <input type="password" name="password"  maxlength="20" placeholder="パスワード" value="<?php echo h($form['password']); ?>"/>
+    <?php if (isset($error['password']) && $error['password'] === 'blank'): ?>
+        <p class="error">* パスワードを入力してください</p>
+    <?php endif; ?>
+    <?php if (isset($error['password']) && $error['password'] === 'length'): ?>
+        <p class="error">* パスワードは4文字以上で入力してください</p>
+    <?php endif; ?>
+</p>
+<p>
+    <button class="newac", id="newac"><ruby>確認<rt>かくにん</rt></ruby></button>
+</p>
+</p>
+</form>
+</div>
 </body>
 
 </html>
